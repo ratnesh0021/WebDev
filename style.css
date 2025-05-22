@@ -1,0 +1,30 @@
+body {
+  background-color: lightyellow;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: darkblue;
+}
+
+h2 {
+  color: darkgreen;
+}
+
+h3, h4 {
+  color: darkred;
+}
+
+h5 {
+  margin-top: 30px;
+  color: black;
+}
+
+h6 {
+  background-color: lightblue;
+  padding: 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
