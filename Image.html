@@ -1,66 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
   <title>Ratnesh Kumar - Introduction</title>
 
-  <!-- Internal CSS -->
   <style>
     body {
       background-color: lightyellow;
       font-family: Arial, sans-serif;
-      text-align: center;
+      margin: 0;
       padding: 20px;
+      position: relative;
+    }
+
+    /* Profile image in top-right corner with proper margin */
+    .corner-img {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 130px;
+      height: auto;
+      border-radius: 50%;
+      border: 3px solid #1a73e8;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
     h1 {
       color: darkblue;
+      text-align: center;
+      margin-top: 40px;
     }
 
     h2 {
       color: darkgreen;
+      text-align: center;
     }
 
     h3, h4 {
       color: darkred;
+      text-align: center;
     }
 
     h5 {
-      margin-top: 30px;
+      margin-top: 50px;
       color: black;
+      text-align: center;
+      font-size: 20px;
     }
 
     h6 {
       background-color: lightblue;
-      padding: 10px;
-      border: 1px solid blue;
-      border-radius: 5px;
-      margin: 20px;
-    }
-
-    .profile-img {
-      width: 200px;
-      height: auto;
-      border-radius: 50%;
-      border: 3px solid #1a73e8;
-      margin: 20px 0;
+      padding: 20px;
+      border: 2px solid blue;
+      border-radius: 8px;
+      margin: 20px auto;
+      text-align: center;
+      max-width: 700px;
+      font-size: 18px;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
+
+  <!-- Profile Image in the Top Right -->
+  <img src="profile.png" alt="Profile Picture of Ratnesh Kumar" class="corner-img">
 
   <h1>Ratnesh Kumar</h1>
   <h2>Gaya College of Engineering, Gaya</h2>
   <h3>Registration No: 23105110903</h3>
   <h4>Roll No: 23/CSE/08(LE)</h4>
 
-  <!-- Profile Image -->
-  <img src="profile.png" alt="Profile Picture of Ratnesh Kumar" class="profile-img">
-
-  <h5>Short Introduction:</h5>
+  <h5>Short Introduction</h5>
   <h6>
-    Hello! I'm Ratnesh Kumar, a student of Computer Science and Engineering at Gaya College of Engineering.
-    I enjoy learning about technology, solving problems, and growing my knowledge every day.
+    Hello! I'm <strong>Ratnesh Kumar</strong>, a passionate learner and a Computer Science and Engineering student 
+    at <strong>Gaya College of Engineering</strong>. I am deeply interested in modern technologies, coding, and innovative 
+    problem solving. I aim to build a strong foundation in computer science while exploring opportunities to grow 
+    and contribute in real-world projects.
   </h6>
 
 </body>
