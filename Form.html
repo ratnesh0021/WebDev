@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basic Info Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #80deea);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .form-container {
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #00796b;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    select:focus {
+      border-color: #26a69a;
+      box-shadow: 0 0 5px rgba(38, 166, 154, 0.3);
+      outline: none;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      margin-bottom: 18px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: normal;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+      background: #00796b;
+      transition: background 0.3s ease;
+    }
+
+    input[type="reset"] {
+      background: #d32f2f;
+    }
+
+    input[type="submit"]:hover {
+      background: #004d40;
+    }
+
+    input[type="reset"]:hover {
+      background: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="form-container">
+    <h2>Basic Information Form</h2>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="mobile">Mobile No:</label>
+    <input type="tel" id="mobile" name="mobile" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label>Gender:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="gender" value="male" required> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </div>
+
+    <label>Education Completed:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="education" value="10th"> 10th</label>
+      <label><input type="checkbox" name="education" value="12th"> 12th</label>
+      <label><input type="checkbox" name="education" value="btech"> B.Tech</label>
+      <label><input type="checkbox" name="education" value="pg"> PG</label>
+    </div>
+
+    <label for="tea">Do you like tea?</label>
+    <select id="tea" name="tea">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="sometimes">Sometimes</option>
+    </select>
+
+    <div class="buttons">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+
+</body>
+</html>
