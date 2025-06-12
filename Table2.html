@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Academic Record - Students</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #4a148c;
+      margin-bottom: 40px;
+    }
+
+    table {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 16px 20px;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    th {
+      background-color: #7b1fa2;
+      color: white;
+      font-size: 1.1rem;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #ede7f6;
+      transition: 0.3s ease;
+    }
+
+    td {
+      color: #333;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      table {
+        font-size: 0.9rem;
+      }
+
+      th, td {
+        padding: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      table, th, td {
+        font-size: 0.8rem;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Student Academic Record</h2>
+
+  <table>
+    <tr>
+      <th rowspan="2">Name</th>
+      <th colspan="2">Academic Information</th>
+    </tr>
+    <tr>
+      <th>Registration No</th>
+      <th>CGPA (Till Last Semester)</th>
+    </tr>
+    <tr>
+      <td>Ratnesh Kumar</td>
+      <td>23105110903</td>
+      <td>8.6</td>
+    </tr>
+    <tr>
+      <td>Priya Singh</td>
+      <td>23105110910</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <td>Aman Raj</td>
+      <td>23105110908</td>
+      <td>8.9</td>
+    </tr>
+    <tr>
+      <td>Rohit Kumar</td>
+      <td>23105110915</td>
+      <td>7.8</td>
+    </tr>
+    <tr>
+      <td>Sakshi Verma</td>
+      <td>23105110912</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>Ankit Thakur</td>
+      <td>23105110918</td>
+      <td>8.3</td>
+    </tr>
+    <tr>
+      <td>Neha Jha</td>
+      <td>23105110920</td>
+      <td>8.7</td>
+    </tr>
+  </table>
+
+</body>
+</html>
